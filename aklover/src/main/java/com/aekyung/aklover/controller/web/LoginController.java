@@ -10,24 +10,21 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.aekyung.aklover.mapper.web.BoardMapper;
-
-
-
+import com.aekyung.aklover.mapper.web.LoginMapper;
 
 @Controller
-public class TestController {
+public class LoginController {
 	
 	@Autowired
-	private BoardMapper boardMapper;
+	private LoginMapper loginMapper;
 	
 	
-	@RequestMapping(value = "/", method= RequestMethod.GET)
+	@RequestMapping(value = "/login", method= RequestMethod.GET)
     public String root(Model model) throws Exception {
-        List<Map<String, Object>> list = boardMapper.selectHeroGroup();
+        //List<Map<String, Object>> list = loginMapper.selectHeroGroup();
         
-        model.addAttribute("result", list);
+        //model.addAttribute("result", list);
         
-        return "web/main/index";
+        return "web/login/index";
     }
 }
