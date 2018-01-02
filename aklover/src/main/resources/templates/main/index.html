@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="/layout/layout" >
+ 	
+	<section layout:fragment="content">
+		<script type="text/javascript">
+        $(document).ready(function(){
+        	console.log("Script Test Roggic");
+        })
+    	</script>
+    	
+		<div class="mt30">
+		컨텐츠
+		<p th:text="${result}"></p>
+		</div>
+	</section>
+</html>
