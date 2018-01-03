@@ -3,10 +3,9 @@
 
 	<head layout:replace="web/fragments/head :: head"></head>
 <body>
-
 	<header th:replace="web/fragments/header :: header"></header>
 	
-	<section layout:fragment="content"></section>
+	<section layout:fragment="content" id="contentWrap"></section>
 	
 	<footer th:replace="web/fragments/footer :: footer"></footer>
 </body>

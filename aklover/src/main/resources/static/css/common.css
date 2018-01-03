@@ -59,3 +59,16 @@ a:focus {color:#333;}
 input:-ms-input-placeholder {color:#bbb;}
 input::-webkit-input-placeholder {color:#bbb;}
 input::-moz-placeholder {color:#bbb;} 
+
+
+header{width:100%; min-width:1200px; border-top:3px solid #f88b36; background-color: #fff;}
+header .header{width:1200px; height: 100%; margin:0 auto;}
+header .header h1{display: inline-block; vertical-align: top; margin-top:25px; margin-right:60px;}
+header .header .gnbWrap{display: inline-block; vertical-align: top; margin-top:35px;}
+header .header .gnbWrap .gnbList{width:100%; overflow: hidden;}
+header .header .gnbWrap .gnbList li{float:left; padding:0 40px; height: 45px; text-align: left;}
+header .header .gnbWrap .gnbList li a{color:#f88b36; font-weight: bold;}
+header .header .gnbWrap .gnbList li .small{font-size: 13px;}
+header .header .gnbWrap .gnbList li .big{font-size: 18px;}
+
+
