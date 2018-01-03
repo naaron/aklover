@@ -3,7 +3,9 @@ package com.aekyung.aklover.mapper.web;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.annotations.MapKey;
+
 public interface LoginMapper {
-	//public List<Map<String, Object>> selectHeroGroup() throws Exception;
+	List<Map<String, Object>> selectLoginMember(Map<String, Object> map) throws Exception;
 	
 }

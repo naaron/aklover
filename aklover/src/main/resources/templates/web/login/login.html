@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="web/layout/layout" >
+ 	
+ 	<section layout:fragment="content">
+		<form action="/login" method="post">
+			<input type="hidden" name="hero_id" value="de305" />
+			<input type="hidden" name="hero_pw" value="skfbs123*" />
+			
+			<input type="submit" value="로그인" />
+		</form>
+	</section>
+</html>

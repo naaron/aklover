@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+ 
+<mapper namespace="com.aekyung.aklover.mapper.web.LoginMapper">
+	<select id="selectLoginMember" parameterType="map" resultType="hashmap">
+		SELECT *
+		FROM
+			member
+		WHERE 
+			hero_id = #{hero_id} 
+		AND 
+			hero_pw = md5(#{hero_pw})
+	</select>
+</mapper>
