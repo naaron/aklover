@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+ 
+<mapper namespace="com.aekyung.aklover.mapper.web.board.BoardMapper">
+	<select id="selectHeroGroup" resultType="hashmap">
+		SELECT *
+		FROM
+		admin
+	</select>
+	
+	<select id="selectBoardList" parameterType="map" resultType="hashmap">
+		SELECT 
+			*
+		FROM 
+			board
+		WHERE 
+			hero_table = #{hero_group}
+		ORDER BY hero_idx DESC
+		LIMIT 0, 10
+	</select>
+</mapper>

@@ -27,4 +27,11 @@ public class CommonUtil {
             } 
         } 
 	}
+	
+	public static String getBoardCodeUrl(HttpServletRequest request) {
+		String url = request.getRequestURI();
+		String code = url.substring(url.lastIndexOf("/")+1);
+		
+		return code;
+	}
 }

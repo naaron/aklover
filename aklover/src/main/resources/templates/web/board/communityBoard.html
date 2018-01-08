@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorator="web/layout/layout" >
+ 	
+ 	<section layout:fragment="content">
+		<article>
+			<h1><span>수다통</span></h1>
+			
+			<div class="list">
+				<table class="listType1">
+					<colgroup>
+						<col width="10%" />
+						<col width="*" />
+						<col width="10%" />
+						<col width="10%" />
+					</colgroup>
+					
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">제목</th>
+							<th scope="col">글쓴이</th>
+							<th scope="col">날짜</th>
+						</tr>
+					</thead>
+					
+					<tbody>
+						<tr th:each="result : ${list}"> 
+							<td th:text="${result.hero_idx}"></td>
+							<td><a th:href="@{/board/{hero_idx}(hero_idx=${result.hero_idx})}" th:text="${result.hero_title}"></a></td>
+							<td th:text="${result.hero_nick}"></td>
+							<td th:text="${result.hero_today}"></td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="paging">
+					<a href="#">＜＜</a>
+					<a href="#">＜</a>
+					<a href="#" class="on">1</a>
+					<a href="#">2</a>
+					<a href="#">＞</a>
+					<a href="#">＞＞</a>
+				</div>
+			</div>
+		</article>
+	</section>
+</html>

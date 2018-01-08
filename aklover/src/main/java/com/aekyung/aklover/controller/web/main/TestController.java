@@ -1,4 +1,4 @@
-package com.aekyung.aklover.controller.web;
+package com.aekyung.aklover.controller.web.main;
 
 
 import java.util.List;
@@ -12,7 +12,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.aekyung.aklover.mapper.web.BoardMapper;
+import com.aekyung.aklover.mapper.web.board.BoardMapper;
+
 
 @Controller
 public class TestController {

@@ -1,4 +1,4 @@
-package com.aekyung.aklover.controller.web;
+package com.aekyung.aklover.controller.web.login;
 
 
 import java.util.HashMap;
@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.aekyung.aklover.mapper.web.LoginMapper;
+import com.aekyung.aklover.mapper.web.login.LoginMapper;
+
 
 @Controller
 public class LoginController {

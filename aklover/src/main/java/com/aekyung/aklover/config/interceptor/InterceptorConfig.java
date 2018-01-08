@@ -1,4 +1,4 @@
-package com.aekyung.aklover.config;
+package com.aekyung.aklover.config.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

@@ -1,4 +1,4 @@
-package com.aekyung.aklover.mapper.web;
+package com.aekyung.aklover.mapper.web.login;
 
 import java.util.List;
 import java.util.Map;

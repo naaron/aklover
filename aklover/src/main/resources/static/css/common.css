@@ -32,6 +32,7 @@ blockquote:before, blockquote:after,q:before, q:after {content:''; content:none;
 img, fieldset, a {border:none;}
 img {vertical-align:middle;}
 table, thead, tbody, tfoot {border-collapse:collapse; border-spacing:0; border:0 none;}
+table{width: 100%; table-layout: fixed;}
 ul, ol, li {list-style:none;}
 address, em {font-style:normal;}
 input, select, textarea, button, form img {vertical-align:middle;}
@@ -71,4 +72,17 @@ header .header .gnbWrap .gnbList li a{color:#f88b36; font-weight: bold;}
 header .header .gnbWrap .gnbList li .small{font-size: 13px;}
 header .header .gnbWrap .gnbList li .big{font-size: 18px;}
 
+#contentWrap{width:1200px; margin:0 auto; overflow: hidden; padding:70px 0 160px; min-height: 440px;}
+#contentWrap article{}
+#contentWrap article h1{position: relative; margin-bottom: 45px; font-weight: 500; font-size:28px; text-align: center;}
+
+.listType1{border-top: 2px solid #c7c7c7;}
+.listType1 th, .listType1 td{text-align: center; border-bottom: 1px solid  #e0e0e0;}
+.listType1 th{padding: 18px 0; color: #212121; font-weight: 500; font-size: 18px;}
+.listType1 td{padding: 10px 0; height: 33px; font-weight: 300}
+
+.paging{margin: 0 auto; padding: 30px 0 12px; text-align: center;}
+.paging a{position: relative; display: inline-block; width: 34px; height: 34px; margin: 0 1px; line-height: 34px; font-size:14px; text-align: center; font-weight: 300; vertical-align: bottom; border:1px solid #e0e0e0}
+.paging .on{color: #fff; border: 1px solid #f88b36; background-color: #f88b36;}
+ 
 

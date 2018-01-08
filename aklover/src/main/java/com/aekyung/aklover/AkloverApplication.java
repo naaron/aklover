@@ -27,7 +27,7 @@ public class AkloverApplication {
             sessionFactory.setDataSource(dataSource);
             
             sessionFactory.setMapperLocations(new
-    				PathMatchingResourcePatternResolver().getResources("classpath:/mappers/**/*.xml"));
+    				PathMatchingResourcePatternResolver().getResources("classpath:/mappers/**/**/*.xml"));
             
             return sessionFactory.getObject();
     }

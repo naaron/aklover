@@ -1,4 +1,4 @@
-package com.aekyung.aklover.config;
+package com.aekyung.aklover.config.interceptor;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
